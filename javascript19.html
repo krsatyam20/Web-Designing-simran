@@ -1,0 +1,97 @@
+<html>
+<head>
+<title>java script 19 </title>
+</head>
+<script>
+function hello() {
+var x = document.getElementById("num1").value;
+var y = document.getElementById("num2").value;
+var z = document.getElementById("num3").value;
+
+x= parseInt(x);
+y= parseInt(y);
+z= parseInt(z);
+if (x > y) {
+    if (x>z) {
+	     console.log("x is greater");
+		 }
+		else {
+		  console.log("z is greater");
+		  }
+		}
+	else {
+	    if (y>z) {
+		  console.log("y is greater");
+		  }
+		 else {
+		   console.log ("z is greater");
+		   }
+		 }
+}
+
+
+function loop(){
+
+//loop  :repetition
+/* startPoint ,endPoint, steps(increment/decrement)
+increment :++ 
+	10
+	10++
+	=10+1
+	=11+1
+Decerment : -- 
+	10
+	10--
+	9--
+Two way we can write increment/decrement
+		post : a++/a--	
+		pre  :++a/--a
+
+		*/
+var x=0		
+for(var i=0;i<=50;i++){
+
+//console.log("hello");
+//console.log(i)
+x=x+i;
+
+}
+console.log(x)
+
+
+
+
+}
+
+function oddEven(){
+
+
+
+
+for(var i=1;i<=100;i++) {
+
+  if(i%2==0){
+  
+  console.log(i);
+
+}
+}
+
+}		 
+</script>
+<body>
+<input type="text" id="num1"/>
+<input type="text" id="num2"/>
+<input type="text" id="num3"/>
+<input type="text" id="num4"/>
+<button onclick="hello();"> click here </button>
+<button onclick="loop();"> click here  for Loop</button>
+<button onclick="oddEven();"> click here  for oddEven</button>
+
+
+
+
+</body>
+</html>
+
+
