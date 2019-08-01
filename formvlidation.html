@@ -1,0 +1,39 @@
+<html>
+<head>
+<script>
+function validation(){
+
+var uName=document.getElementById("userName").value;
+var uEmail=document.getElementById("userEmail").value;
+
+if(uName==""){
+alert("Please enter the user name");
+}
+ 
+if(uEmail==""){
+alert("Please Enter the User email");
+}
+
+
+
+
+
+
+
+
+}
+</script>
+</head>
+<body>
+<input type="text" name="userName" id="userName" placeholder="Enter Name"></br></br>
+<input type="text" name="userEmail" id="userEmail" placeholder="Enter Email" ></br></br>
+<input type="password" name="password" placeholder="Enter Password" ></br></br>
+<button onclick="validation();" name="submit" >Submit</button>
+
+</body>
+
+
+
+
+
+</html>
